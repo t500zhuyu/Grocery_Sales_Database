@@ -19,4 +19,6 @@ like:
 
 - Geographical Sales Insights
   - how sales are distributed across different cities
+ 
+I also used Python to load the sales csv file due to is a file with more than 6 million rows, use Python is a easier way to load it, I also used Python to update the price column using the information from the products.
 
