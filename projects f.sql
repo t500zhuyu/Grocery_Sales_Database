@@ -139,7 +139,7 @@ FROM (
     SELECT CustomerID
     FROM sales_updated
     GROUP BY CustomerID
-    HAVING COUNT(*) < 1
+    HAVING COUNT(*)
 ) AS several_times;
 
 # showing the less repeat customers first
@@ -163,7 +163,6 @@ order by avg_order_value desc;
   -- Objective: Evaluate the performance of sales personnel in driving sales.
    # Calculate total sales attributed to each salesperson.
    
-	# correct code
 	SELECT SalesPersonID, SUM(TotalPrice) AS TotalSales,
 		RANK() OVER (ORDER BY SUM(TotalPrice) DESC) AS SalesAttributed
 		FROM sales_updated
@@ -216,64 +215,5 @@ GROUP BY
     ci.CityID, ci.CityName
 ORDER BY 
     TotalSales DESC;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
