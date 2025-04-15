@@ -10,8 +10,8 @@ like:
   - best products by ID
     
 - Customer Purchase Behavior
- - identify total purcharses by client
- - Identify repeat customers
+   - identify total purcharses by client
+   - Identify repeat customers
 
 - Salesperson Effectiveness
   - Check the number of sales by person
